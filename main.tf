@@ -18,3 +18,7 @@ terraform {
 provider "aws" {
   region = local.region
 }
+
+resource "aws_ecs_cluster" "ecs_cluster" {
+  name = local.app
+}
